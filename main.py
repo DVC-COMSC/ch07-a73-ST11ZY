@@ -13,7 +13,7 @@ for i in range(len(numbers)):
     if numbers[i]>insval:
         numbers.insert(i,insval)
         break
-    else:
+    if numbers[4]<insval:
         numbers.insert(5,insval)
         break
 print(numbers)
