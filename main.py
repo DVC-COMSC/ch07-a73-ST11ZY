@@ -9,4 +9,11 @@ insval = int(input('Enter the insertion value: '))
 for i in range(len(numbers)):
     if numbers[i-1]<insval and numbers[i]>insval:
         numbers.insert(i,insval)
+        break
+    if numbers[i]>insval:
+        numbers.insert(i,insval)
+        break
+    else:
+        numbers.insert(5,insval)
+        break
 print(numbers)
